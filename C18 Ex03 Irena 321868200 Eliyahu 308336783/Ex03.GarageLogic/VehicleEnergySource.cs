@@ -7,15 +7,19 @@ namespace Ex03.GarageLogic
         private float m_CurrentEnergy;
         private float m_MaxEnergy;
 
-        public VehicleEnergySource(float i_CurrentPower, float i_MaxPower)
+        public VehicleEnergySource(float i_CurrentEnergy, float i_MaxEnergy)
         {
-            m_CurrentEnergy = i_CurrentPower;
-            m_MaxEnergy = i_MaxPower;
+            m_CurrentEnergy = i_CurrentEnergy;
+            m_MaxEnergy = i_MaxEnergy;
         }
 
         public float CurrentEnergy
         {
             get { return m_CurrentEnergy; }
+            set
+            {
+                m_CurrentEnergy = value;
+            }
         }
 
         public float MaxEnergy
@@ -26,6 +30,18 @@ namespace Ex03.GarageLogic
         public float CurrentEnergyPercentage
         {
             get { return (m_CurrentEnergy / m_MaxEnergy) * 100; }
+        }
+
+        public void AddEnergy(float i_EnergyToAdd)
+        {
+            if (i_EnergyToAdd > MaxEnergy - CurrentEnergy)
+            {
+                throw new ValueOutOfRangeException(0, MaxEnergy - CurrentEnergy);
+            }
+            else
+            {
+                CurrentEnergy += i_EnergyToAdd;
+            }
         }
     }
 }

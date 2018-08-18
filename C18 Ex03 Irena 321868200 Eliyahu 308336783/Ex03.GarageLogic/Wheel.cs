@@ -34,7 +34,7 @@ namespace Ex03.GarageLogic
         {
             if (i_WheelPsiToAdd > m_MaxPsi - m_CurrentPsi)
             {
-                throw new OutOfRangeException(0, m_MaxPsi - m_CurrentPsi);
+                throw new ValueOutOfRangeException(0, m_MaxPsi - m_CurrentPsi);
             }
             else
             {
