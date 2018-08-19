@@ -1,5 +1,4 @@
-﻿using System;
-
+﻿
 namespace Ex03.GarageLogic
 {
     public class Wheel
@@ -30,7 +29,7 @@ namespace Ex03.GarageLogic
             get { return m_MaxPsi; }
         }
 
-        public void InflateWheel(float i_WheelPsiToAdd)
+        public void InflateWheel(int i_WheelPsiToAdd)
         {
             if (i_WheelPsiToAdd > m_MaxPsi - m_CurrentPsi)
             {
@@ -42,7 +41,7 @@ namespace Ex03.GarageLogic
             }
         }
 
-        public void InflateWheelToMaxPsi()
+        public void InflateWheelToMaxPsi()// Need to be here??
         {
             m_CurrentPsi = m_MaxPsi;
         }
