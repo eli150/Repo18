@@ -1,6 +1,5 @@
-﻿using System;
-
-namespace Ex03.GarageLogic
+﻿
+namespace Ex03.GarageLogic.Cars
 {
     public enum eCarColors
     {

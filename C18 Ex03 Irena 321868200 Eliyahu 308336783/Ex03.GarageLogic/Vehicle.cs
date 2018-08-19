@@ -4,10 +4,9 @@ namespace Ex03.GarageLogic
 {
     abstract public class Vehicle
     {
-        protected string m_ModelName;
-        protected string m_LicenseNumber;
-        //protected VehicleEnergySource m_VehicleEnergy;
-        //protected float m_PrecentOfEnergy;
+        private string m_ModelName;
+        private string m_LicenseNumber;
+        private eVehicleStatus m_VehicleStatus;
         protected Wheel[] m_Wheels;
         protected Engine m_Engine;
 
@@ -28,9 +27,6 @@ namespace Ex03.GarageLogic
             get { return m_LicenseNumber; }
         }
 
-        //abstract public float EnergyPercentage();
-        //{
-            //return m_VehicleEnergy.CurrentEnergyPercentage;
-        //}
+        public eVehicleStatus VehicleStatus { get => m_VehicleStatus; set => m_VehicleStatus = value; }
     }
 }

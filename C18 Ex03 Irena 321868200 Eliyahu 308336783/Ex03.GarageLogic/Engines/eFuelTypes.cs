@@ -1,6 +1,5 @@
-﻿using System;
-
-namespace Ex03.GarageLogic
+﻿
+namespace Ex03.GarageLogic.Engines
 {
     public enum eFuelTypes
     {

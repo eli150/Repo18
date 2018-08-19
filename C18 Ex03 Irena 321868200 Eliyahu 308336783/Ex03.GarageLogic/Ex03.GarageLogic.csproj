@@ -38,11 +38,13 @@
     <Compile Include="Cars\eCarColors.cs" />
     <Compile Include="Cars\ElectronicCar.cs" />
     <Compile Include="Cars\FuelCar.cs" />
+    <Compile Include="Customer.cs" />
     <Compile Include="Engines\ElectricEngine.cs" />
     <Compile Include="Engines\Engine.cs" />
     <Compile Include="Engines\eFuelTypes.cs" />
     <Compile Include="Cars\eNumberOfCarDoors.cs" />
     <Compile Include="Engines\FuelEngine.cs" />
+    <Compile Include="eVehicleStatus.cs" />
     <Compile Include="Motorcycles\ElectronicMotorcycle.cs" />
     <Compile Include="Motorcycles\eTypesOfDriversLicense.cs" />
     <Compile Include="Motorcycles\FueldMotorcycle.cs" />
