@@ -1,5 +1,4 @@
-﻿
-namespace Ex03.GarageLogic
+﻿namespace Ex03.GarageLogic
 {
     public class Wheel
     {
@@ -41,7 +40,7 @@ namespace Ex03.GarageLogic
             }
         }
 
-        public void InflateWheelToMaxPsi()// Need to be here??
+        public void InflateWheelToMaxPsi()
         {
             m_CurrentPsi = m_MaxPsi;
         }
